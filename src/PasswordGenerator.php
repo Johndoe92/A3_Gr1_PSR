@@ -54,7 +54,7 @@ class PasswordGenerator
         ]))
             throw new \Exception('Bad strength!');
 
-        $length = (is_null($number))
+        $length  = (is_null($number))
             ? self::$passwordDefaultLength
             : (0 === (int)$number)
                 ? self::$passwordDefaultLength
